@@ -1,0 +1,290 @@
+html, body{
+	height: 100%;
+    overflow: hidden;
+}
+
+body{
+	background-image: linear-gradient(#e56f66, #ad3169, #4f3069, #080e2e);
+}
+
+main{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 600px;
+}
+#circulo{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0;
+    left: 180px;
+}
+
+#cabeca{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 35px;
+    left: 53px;
+}
+
+#corpo{
+    position: absolute;
+    top: 75px;
+    left: 46px;
+    height: 30px;
+    width: 120px;
+    overflow: hidden;
+}
+
+#corpo::before{
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#risco{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 90%;
+    position: absolute;
+    top: 105px;
+    left: 45px;
+    width: 55px;
+}
+
+#risco2{
+    position: absolute;
+    top: 73px;
+    left: 79px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100px;
+    
+}
+
+#risco3{
+    position: absolute;
+    top: 73px;
+    right: 69px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100px;
+}
+
+#user{
+    background-color: #d2d2d2;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    top: 200px;
+    left: 160px;
+}
+
+#mini-user{
+    position: absolute;
+}
+
+#mini-cabeca{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 52px;
+    left: 127px;
+}
+
+#mini-corpo{
+    position: absolute;
+    top: 75px;
+    left: 117px;
+    height: 10px;
+    width: 50px;
+    overflow: hidden;
+}
+
+#mini-corpo::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#mini-risco{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 90%;
+    position: absolute;
+    top: 86px;
+    left: 120px;
+    width: 35px;
+}
+
+#pass{
+    background-color: #d2d2d2;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    top: 270px;
+    left: 160px;
+}
+
+#cadeado{
+    position: absolute;
+    top: -64px;
+    left: -3px;
+}
+
+#quadrado{
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 352px;
+    left: 127px;
+}
+
+#aco{
+    position: absolute;
+    top: 341px;
+    left: 127px;
+    height: 13px;
+    width: 53px;
+    overflow: hidden;
+}
+
+#aco::before{
+    content: "";
+    position: absolute;
+    height: 53px;
+    width: 23px;
+    border-radius: 90%;
+    border: 1px solid white;
+}
+
+#chave{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 356px;
+    left: 134px;
+}
+
+#risco-chave{
+    position: absolute;
+    top: 364px;
+    left: 137.4px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    height: 6.5px;
+}
+
+input[type="submit"]{
+    position: absolute;
+    top: 350px;
+    left: 125px;
+    background-color: #fd5286;
+    padding: 15px;
+    width: 238px;
+    border-radius: 10px;
+    color: white;
+}
+
+.chk{
+    display: inline-block;
+    border: 2px solid #d2d2d2;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+#label{
+    height: 13px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: sans-serif;
+    margin-right: 80px
+}
+
+#label h1{
+    position: absolute;
+    top: -11px;
+    left: 24px;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+
+input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+    margin: 0;
+}
+
+input[type="checkbox"]:checked + label .chk{
+    background-color: transparent;
+    position: relative;
+}
+
+input[type="checkbox"]:checked + label .chk::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border: 2px solid #fd5299;
+    transform: rotate(45deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+#check{
+    position: absolute;
+    top: 430px;
+    left: 120px;
+}
+
+#check a{
+    margin-left: 2px;
+    font-family: cursive;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fd5299;
+    position: absolute;
+    top: 1px;
+    left: 120px;
+    width: 130px;
+}
+
+#risco-check{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 242px;
+}
+
+h2{
+    position: absolute;
+    bottom: -20px;
+    left: 140px;
+    color: rgba(255, 255, 255, 0.5);
+}
